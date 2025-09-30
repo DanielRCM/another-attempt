@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import Navigation from "@/components/Navigation";
 import principlesImage from "@/assets/principles-card.jpg";
 import attitudesImage from "@/assets/attitudes-card.jpg";
 import aboutImage from "@/assets/about-card.jpg";
@@ -38,6 +39,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Header */}
       <header className="border-b border-border bg-card">
         <div className="container mx-auto px-6 py-12 text-center">
