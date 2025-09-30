@@ -6,10 +6,10 @@ const Navigation = () => {
   
   const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/principles", label: "Principles" },
-    { path: "/attitudes", label: "Attitudes" },
+    { path: "/principles", label: "12 RCM Principles" },
+    { path: "/attitudes", label: "12 RCM Attitudes" },
     { path: "/about", label: "About" },
-    { path: "/faq", label: "FAQ" }
+    { path: "/faq", label: "FAQs" }
   ];
 
   return (
