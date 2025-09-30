@@ -22,7 +22,7 @@ const SidebarLayout = ({ children, tocItems }: SidebarLayoutProps) => {
       </aside>
       
       {/* Center content */}
-      <div className="max-w-4xl mx-auto px-6 w-full">
+      <div className="max-w-3xl mx-auto px-6 w-full">
         {children}
       </div>
       
