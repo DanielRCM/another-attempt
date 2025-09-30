@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const location = useLocation();
@@ -20,21 +21,27 @@ const Navigation = () => {
             Root Cause Medicine
           </Link>
           
-          <div className="flex items-center gap-1 md:gap-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={cn(
-                  "px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground",
-                  location.pathname === link.path
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground"
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-1 md:gap-2">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={cn(
+                    "px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground",
+                    location.pathname === link.path
+                      ? "bg-primary text-primary-foreground"
+                      : "text-foreground"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            
+            <Button asChild>
+              <Link to="#book-consultation">Book Consultation</Link>
+            </Button>
           </div>
         </div>
       </div>
