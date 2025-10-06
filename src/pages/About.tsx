@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import SidebarLayout from "@/components/SidebarLayout";
+import CrossLinks from "@/components/CrossLinks";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/about/daniel-malis-hero.jpg";
 import pillsImage from "@/assets/about/palm-with-pills.jpg";
 import attorneyImage from "@/assets/about/daniel-attorney.jpg";
@@ -20,7 +22,7 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <SidebarLayout tocItems={aboutToc}>
+      <SidebarLayout tocItems={aboutToc} rightSidebar={<CrossLinks context="about" />}>
         <main className="py-12">
           <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl mb-8">
             About
@@ -164,7 +166,7 @@ const About = () => {
               </figure>
               
               <p className="text-foreground leading-relaxed mb-4">
-                You can see the results of my long-term quest on this website. If you're interested, please read through the 12 RCM Principles as well as the 12 RCM Attitudes.
+                You can see the results of my long-term quest on this website. If you're interested, please read through the <Link to="/principles" className="text-primary hover:underline font-medium">12 RCM Principles</Link> as well as the <Link to="/attitudes" className="text-primary hover:underline font-medium">12 RCM Attitudes</Link>.
               </p>
               <p className="text-foreground leading-relaxed">
                 Within just dozens of minutes, you can reap <em><strong>the results of 14 years of my medical studies and research,</strong></em> in addition to 20 years of observing medicine from all possible angles as an Attorney focusing on Medical Law. And hopefully, you can benefit from those decades of expertise, too.

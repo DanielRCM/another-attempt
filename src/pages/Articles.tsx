@@ -74,8 +74,11 @@ const Articles = () => {
         <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl mb-4">
           Articles
         </h1>
-        <p className="text-lg text-muted-foreground mb-12">
+        <p className="text-lg text-muted-foreground mb-4">
           Explore in-depth articles about Root Cause Medicine principles and practices.
+        </p>
+        <p className="text-muted-foreground mb-12">
+          Looking for the fundamentals? Check out the <Link to="/principles" className="text-primary hover:underline font-medium">12 RCM Principles</Link> and <Link to="/attitudes" className="text-primary hover:underline font-medium">12 RCM Attitudes</Link>.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
