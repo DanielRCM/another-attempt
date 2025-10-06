@@ -1,5 +1,11 @@
 import Navigation from "@/components/Navigation";
 import SidebarLayout from "@/components/SidebarLayout";
+import heroImage from "@/assets/about/daniel-malis-hero.jpg";
+import pillsImage from "@/assets/about/palm-with-pills.jpg";
+import attorneyImage from "@/assets/about/daniel-attorney.jpg";
+import booksImage from "@/assets/about/books-library.jpg";
+import patientImage from "@/assets/about/active-patient.jpg";
+import timeImage from "@/assets/about/compressing-time.jpg";
 
 const aboutToc = [
   { id: "introduction", label: "Introduction" },
@@ -20,6 +26,15 @@ const About = () => {
             About
           </h1>
           
+          
+          <figure className="mb-8">
+            <img 
+              src={heroImage} 
+              alt="Daniel Mališ" 
+              className="w-full rounded-lg shadow-lg"
+            />
+          </figure>
+          
           <div className="prose prose-lg max-w-none space-y-12">
             <section id="introduction" className="scroll-mt-20">
               <p className="text-foreground leading-relaxed mb-4">
@@ -37,6 +52,18 @@ const About = () => {
               <p className="text-foreground leading-relaxed mb-4">
                 At that time, I realized that Western Medicine doesn't really <strong><em>cure</em></strong> patients, but instead <strong><em>treats</em></strong> them continually, mainly with pharmaceuticals, and often for the rest of their lives.
               </p>
+              
+              <figure className="my-6">
+                <img 
+                  src={pillsImage} 
+                  alt="Palm with pills" 
+                  className="w-full rounded-lg shadow-md"
+                />
+                <figcaption className="mt-2 text-center italic font-bold text-foreground">
+                  This is what I saw, and I had some doubts.
+                </figcaption>
+              </figure>
+              
               <p className="text-foreground leading-relaxed mb-4">
                 I knew something was wrong with that approach. If the treatment was effective, how come the patients weren't eventually cured of their diseases?
               </p>
@@ -61,6 +88,18 @@ const About = () => {
               <p className="text-foreground leading-relaxed mb-4">
                 That expectation proved correct, and during some 20 years of practicing as an Attorney-at-Law, I was involved in every client case that had <em><strong>anything to do with medicine.</strong></em> Thanks to this experience, I saw medicine from all possible angles and perspectives.
               </p>
+              
+              <figure className="my-6">
+                <img 
+                  src={attorneyImage} 
+                  alt="Daniel Mališ as attorney" 
+                  className="w-full max-w-md mx-auto rounded-lg shadow-md"
+                />
+                <figcaption className="mt-2 text-center italic font-bold text-foreground">
+                  Me as a Partner of a law firm that I co-founded, seeing numerous aspects of medicine and healthcare as a lawyer specializing in Medical Law.
+                </figcaption>
+              </figure>
+              
               <p className="text-foreground leading-relaxed">
                 But my initial conundrum was still unsolved. Are there some <em><strong>core principles</strong></em> that can be applied within any system of medicine <em><strong>to really see the patients get back to health?</strong></em>
               </p>
@@ -73,6 +112,18 @@ const About = () => {
               <p className="text-foreground leading-relaxed mb-4">
                 In 2016, I decided to take <em><strong>an extended sabbatical to find out,</strong></em> along with embarking on my Ph.D. in Medical Law.
               </p>
+              
+              <figure className="my-6">
+                <img 
+                  src={booksImage} 
+                  alt="Books in a library" 
+                  className="w-full rounded-lg shadow-md"
+                />
+                <figcaption className="mt-2 text-center italic font-bold text-foreground">
+                  Will my efforts be worth it, or will I lose quite a few years of my life to discover that there are no core principles for regaining and maintaining health?
+                </figcaption>
+              </figure>
+              
               <p className="text-foreground leading-relaxed mb-4">
                 That sabbatical turned out to be 8 years. I realized that if it took me 6 years to study Western Medicine, I needed at least the same amount of time to identify something potentially better.
               </p>
@@ -100,12 +151,35 @@ const About = () => {
               <p className="text-foreground leading-relaxed mb-4">
                 As a matter of fact, <em><strong>the active role of the patients</strong></em> in the whole process turned out to be so essential that I also needed to formulate the 12 Root Cause Medicine Attitudes, designed primarily for the patients.
               </p>
+              
+              <figure className="my-6">
+                <img 
+                  src={patientImage} 
+                  alt="Active patient" 
+                  className="w-full rounded-lg shadow-md"
+                />
+                <figcaption className="mt-2 text-center italic font-bold text-foreground">
+                  I realized that patients have to be active and empowered for the 12 RCM Principles to work. With that aim, I've come up with the 12 RCM Attitudes as well.
+                </figcaption>
+              </figure>
+              
               <p className="text-foreground leading-relaxed mb-4">
                 You can see the results of my long-term quest on this website. If you're interested, please read through the 12 RCM Principles as well as the 12 RCM Attitudes.
               </p>
               <p className="text-foreground leading-relaxed">
                 Within just dozens of minutes, you can reap <em><strong>the results of 14 years of my medical studies and research,</strong></em> in addition to 20 years of observing medicine from all possible angles as an Attorney focusing on Medical Law. And hopefully, you can benefit from those decades of expertise, too.
               </p>
+              
+              <figure className="my-6">
+                <img 
+                  src={timeImage} 
+                  alt="Compressing time" 
+                  className="w-full rounded-lg shadow-md"
+                />
+                <figcaption className="mt-2 text-center italic font-bold text-foreground">
+                  Yes, you can compress 14 (+ 20) years of my efforts into just dozens of minutes of your reading time. Talk about efficiency!
+                </figcaption>
+              </figure>
             </section>
           </div>
         </main>
