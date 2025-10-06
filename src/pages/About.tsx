@@ -2,11 +2,11 @@ import Navigation from "@/components/Navigation";
 import SidebarLayout from "@/components/SidebarLayout";
 
 const aboutToc = [
-  { id: "background", label: "Background" },
-  { id: "qualifications", label: "Qualifications" },
-  { id: "philosophy", label: "My Philosophy" },
-  { id: "approach", label: "My Approach" },
-  { id: "contact", label: "Contact Information" },
+  { id: "introduction", label: "Introduction" },
+  { id: "medical-studies", label: "Medical Studies & Doubts" },
+  { id: "career-change", label: "Career Change to Law" },
+  { id: "the-quest", label: "The Quest for Principles" },
+  { id: "the-results", label: "The Results" },
 ];
 
 const About = () => {
@@ -16,83 +16,96 @@ const About = () => {
       
       <SidebarLayout tocItems={aboutToc}>
         <main className="py-12">
-          <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl mb-12">
-            About Me
+          <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl mb-8">
+            About
           </h1>
           
           <div className="prose prose-lg max-w-none space-y-12">
-            <section id="background" className="scroll-mt-20">
-              <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
-                Background
-              </h2>
+            <section id="introduction" className="scroll-mt-20">
               <p className="text-foreground leading-relaxed mb-4">
-                I'm an NHS GP working in a practice in South London. I graduated from medical school in 1991, and have been a GP since 1996.
-              </p>
-              <p className="text-foreground leading-relaxed mb-4">
-                In my first few years as a GP, I noticed that many patients kept coming back, again and again, with ongoing problems. Despite my efforts, their conditions weren't improving in the long term. This troubled me. I wondered if there was something fundamentally missing in how I was approaching treatment.
+                Hello, my name is <strong><em>Daniel Mališ,</em></strong> and this website is a result of my long-term efforts to identify <strong><em>the core principles for regaining and maintaining health,</em></strong> regardless of their origin.
               </p>
               <p className="text-foreground leading-relaxed">
-                This led me to explore different approaches to medicine, eventually discovering what I now call Root Cause Medicine (RCM). It's based on understanding and addressing the underlying reasons why people get ill, rather than just managing symptoms.
+                Why was I searching for those principles? Because I couldn't identify them back in the mid-1990s when I was completing my medical studies in the Czech Republic.
               </p>
             </section>
 
-            <section id="qualifications" className="scroll-mt-20">
+            <section id="medical-studies" className="scroll-mt-20">
               <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
-                Qualifications
+                Medical Studies & Early Doubts
               </h2>
               <p className="text-foreground leading-relaxed mb-4">
-                In addition to my conventional medical training, I have pursued extensive additional education in nutritional and functional medicine:
+                At that time, I realized that Western Medicine doesn't really <strong><em>cure</em></strong> patients, but instead <strong><em>treats</em></strong> them continually, mainly with pharmaceuticals, and often for the rest of their lives.
               </p>
-              <ul className="list-disc pl-6 space-y-2 text-foreground">
-                <li>Bachelor of Medicine, Bachelor of Surgery (MBBS) - 1991</li>
-                <li>Member of the Royal College of General Practitioners (MRCGP) - 1996</li>
-                <li>Diploma in Nutritional Medicine - 2003</li>
-                <li>Certified Functional Medicine Practitioner</li>
-              </ul>
-            </section>
-
-            <section id="philosophy" className="scroll-mt-20">
-              <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
-                My Philosophy
-              </h2>
               <p className="text-foreground leading-relaxed mb-4">
-                I believe that the human body has a remarkable capacity to heal itself when given the right conditions. My role as a doctor is to help identify and remove obstacles to healing, and to support the body's natural healing processes.
+                I knew something was wrong with that approach. If the treatment was effective, how come the patients weren't eventually cured of their diseases?
+              </p>
+              <p className="text-foreground leading-relaxed mb-4">
+                And since all the treatment efforts usually only resulted in the patients kept being treated, with no end in sight, <em><strong>why didn't the doctors try something else?</strong></em>
               </p>
               <p className="text-foreground leading-relaxed">
-                Root Cause Medicine isn't about rejecting conventional medicine - it's about complementing it with a deeper understanding of health and disease. Sometimes medication is necessary and lifesaving, but it should be used thoughtfully, alongside addressing the underlying causes of illness.
+                But saying that something doesn't work is one thing, and having a solution is quite another. At that time, I was unable to come up with anything better, and realistically, I was too young and inexperienced for such a task.
               </p>
             </section>
 
-            <section id="approach" className="scroll-mt-20">
+            <section id="career-change" className="scroll-mt-20">
               <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
-                My Approach
+                Career Change to Medical Law
               </h2>
               <p className="text-foreground leading-relaxed mb-4">
-                When you work with me, I take time to understand your full health story. We look at:
+                However, despite not having a better solution, <strong><em>I couldn't put up with the idea of following treatment protocols</em></strong> that I saw as ineffective and counterproductive.
               </p>
-              <ul className="list-disc pl-6 space-y-2 text-foreground mb-4">
-                <li>Your symptoms and medical history</li>
-                <li>Your diet and lifestyle</li>
-                <li>Environmental factors that might be affecting your health</li>
-                <li>Underlying imbalances that could be contributing to your condition</li>
-              </ul>
+              <p className="text-foreground leading-relaxed mb-4">
+                So I changed my career plans. I still <em><strong>got my M.D. degree,</strong></em> but in the meantime, I also started studying law, with the expectation that with my medical background, I'll be well qualified to focus on Medical Law.
+              </p>
+              <p className="text-foreground leading-relaxed mb-4">
+                That expectation proved correct, and during some 20 years of practicing as an Attorney-at-Law, I was involved in every client case that had <em><strong>anything to do with medicine.</strong></em> Thanks to this experience, I saw medicine from all possible angles and perspectives.
+              </p>
               <p className="text-foreground leading-relaxed">
-                Together, we develop a personalized plan to address the root causes of your health issues, not just mask the symptoms.
+                But my initial conundrum was still unsolved. Are there some <em><strong>core principles</strong></em> that can be applied within any system of medicine <em><strong>to really see the patients get back to health?</strong></em>
               </p>
             </section>
 
-            <section id="contact" className="scroll-mt-20">
+            <section id="the-quest" className="scroll-mt-20">
               <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
-                Contact Information
+                The Quest for Core Principles
               </h2>
               <p className="text-foreground leading-relaxed mb-4">
-                If you'd like to learn more about Root Cause Medicine or discuss whether this approach might be right for you, I'd be happy to hear from you.
+                In 2016, I decided to take <em><strong>an extended sabbatical to find out,</strong></em> along with embarking on my Ph.D. in Medical Law.
               </p>
-              <div className="bg-muted p-6 rounded-lg">
-                <p className="text-foreground font-medium mb-2">Dr. [Your Name]</p>
-                <p className="text-foreground">Email: contact@rcmprinciples.com</p>
-                <p className="text-foreground">Practice Location: South London</p>
-              </div>
+              <p className="text-foreground leading-relaxed mb-4">
+                That sabbatical turned out to be 8 years. I realized that if it took me 6 years to study Western Medicine, I needed at least the same amount of time to identify something potentially better.
+              </p>
+              <p className="text-foreground leading-relaxed mb-4">
+                During my sabbatical, I researched various systems of medicine and hundreds of their treatment procedures, methods, and protocols.
+              </p>
+              <p className="text-foreground leading-relaxed mb-4">
+                I read books, textbooks and medical articles, took online courses, and listened to interviews with top medical experts and practitioners in various medical fields.
+              </p>
+              <p className="text-foreground leading-relaxed mb-4">
+                Fortunately, within the first 4 years of my intensive study and research, those coveted <em><strong>core principles</strong></em> gradually started to crystalize.
+              </p>
+              <p className="text-foreground leading-relaxed">
+                However, it took me another 2 years to sort them out and arrange them into the 12 Root Cause Medicine Principles and an additional 2 years to refine the explanation of those principles based on practical feedback and further study.
+              </p>
+            </section>
+
+            <section id="the-results" className="scroll-mt-20">
+              <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
+                The Results
+              </h2>
+              <p className="text-foreground leading-relaxed mb-4">
+                At all times, my goal was to keep the 12 RCM Principles <em><strong>as simple as possible</strong></em> so that they could be applied and understood not only by doctors, but also by the patients.
+              </p>
+              <p className="text-foreground leading-relaxed mb-4">
+                As a matter of fact, <em><strong>the active role of the patients</strong></em> in the whole process turned out to be so essential that I also needed to formulate the 12 Root Cause Medicine Attitudes, designed primarily for the patients.
+              </p>
+              <p className="text-foreground leading-relaxed mb-4">
+                You can see the results of my long-term quest on this website. If you're interested, please read through the 12 RCM Principles as well as the 12 RCM Attitudes.
+              </p>
+              <p className="text-foreground leading-relaxed">
+                Within just dozens of minutes, you can reap <em><strong>the results of 14 years of my medical studies and research,</strong></em> in addition to 20 years of observing medicine from all possible angles as an Attorney focusing on Medical Law. And hopefully, you can benefit from those decades of expertise, too.
+              </p>
             </section>
           </div>
         </main>
