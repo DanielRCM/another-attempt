@@ -20,18 +20,19 @@ const About = () => {
             About Me
           </h1>
           
-          <div className="space-y-16">
+          <div className="prose prose-lg max-w-none space-y-12">
             <section id="background" className="scroll-mt-20">
               <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
                 Background
               </h2>
-              <p className="text-lg text-muted-foreground mb-4">
-                Content about professional background will be added here. This section will detail 
-                education, training, and experience in root cause medicine.
+              <p className="text-foreground leading-relaxed mb-4">
+                I'm an NHS GP working in a practice in South London. I graduated from medical school in 1991, and have been a GP since 1996.
               </p>
-              <p className="text-muted-foreground">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua.
+              <p className="text-foreground leading-relaxed mb-4">
+                In my first few years as a GP, I noticed that many patients kept coming back, again and again, with ongoing problems. Despite my efforts, their conditions weren't improving in the long term. This troubled me. I wondered if there was something fundamentally missing in how I was approaching treatment.
+              </p>
+              <p className="text-foreground leading-relaxed">
+                This led me to explore different approaches to medicine, eventually discovering what I now call Root Cause Medicine (RCM). It's based on understanding and addressing the underlying reasons why people get ill, rather than just managing symptoms.
               </p>
             </section>
 
@@ -39,17 +40,26 @@ const About = () => {
               <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
                 Qualifications
               </h2>
-              <p className="text-lg text-muted-foreground">
-                Professional certifications and qualifications content will be added here.
+              <p className="text-foreground leading-relaxed mb-4">
+                In addition to my conventional medical training, I have pursued extensive additional education in nutritional and functional medicine:
               </p>
+              <ul className="list-disc pl-6 space-y-2 text-foreground">
+                <li>Bachelor of Medicine, Bachelor of Surgery (MBBS) - 1991</li>
+                <li>Member of the Royal College of General Practitioners (MRCGP) - 1996</li>
+                <li>Diploma in Nutritional Medicine - 2003</li>
+                <li>Certified Functional Medicine Practitioner</li>
+              </ul>
             </section>
 
             <section id="philosophy" className="scroll-mt-20">
               <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
                 My Philosophy
               </h2>
-              <p className="text-lg text-muted-foreground">
-                Personal philosophy on root cause medicine and patient care will be detailed here.
+              <p className="text-foreground leading-relaxed mb-4">
+                I believe that the human body has a remarkable capacity to heal itself when given the right conditions. My role as a doctor is to help identify and remove obstacles to healing, and to support the body's natural healing processes.
+              </p>
+              <p className="text-foreground leading-relaxed">
+                Root Cause Medicine isn't about rejecting conventional medicine - it's about complementing it with a deeper understanding of health and disease. Sometimes medication is necessary and lifesaving, but it should be used thoughtfully, alongside addressing the underlying causes of illness.
               </p>
             </section>
 
@@ -57,8 +67,17 @@ const About = () => {
               <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
                 My Approach
               </h2>
-              <p className="text-lg text-muted-foreground">
-                Description of treatment approach and methodology will be added here.
+              <p className="text-foreground leading-relaxed mb-4">
+                When you work with me, I take time to understand your full health story. We look at:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-foreground mb-4">
+                <li>Your symptoms and medical history</li>
+                <li>Your diet and lifestyle</li>
+                <li>Environmental factors that might be affecting your health</li>
+                <li>Underlying imbalances that could be contributing to your condition</li>
+              </ul>
+              <p className="text-foreground leading-relaxed">
+                Together, we develop a personalized plan to address the root causes of your health issues, not just mask the symptoms.
               </p>
             </section>
 
@@ -66,9 +85,14 @@ const About = () => {
               <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
                 Contact Information
               </h2>
-              <p className="text-lg text-muted-foreground">
-                Contact details and booking information will be added here.
+              <p className="text-foreground leading-relaxed mb-4">
+                If you'd like to learn more about Root Cause Medicine or discuss whether this approach might be right for you, I'd be happy to hear from you.
               </p>
+              <div className="bg-muted p-6 rounded-lg">
+                <p className="text-foreground font-medium mb-2">Dr. [Your Name]</p>
+                <p className="text-foreground">Email: contact@rcmprinciples.com</p>
+                <p className="text-foreground">Practice Location: South London</p>
+              </div>
             </section>
           </div>
         </main>
