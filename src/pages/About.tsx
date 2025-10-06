@@ -139,7 +139,7 @@ const About = () => {
                 Fortunately, within the first 4 years of my intensive study and research, those coveted <em><strong>core principles</strong></em> gradually started to crystalize.
               </p>
               <p className="text-foreground leading-relaxed">
-                However, it took me another 2 years to sort them out and arrange them into the 12 Root Cause Medicine Principles and an additional 2 years to refine the explanation of those principles based on practical feedback and further study.
+                However, it took me another 2 years to sort them out and arrange them into the <Link to="/principles" className="text-primary hover:underline font-medium">12 Root Cause Medicine Principles</Link> and an additional 2 years to refine the explanation of those principles based on practical feedback and further study.
               </p>
             </section>
 
@@ -151,7 +151,7 @@ const About = () => {
                 At all times, my goal was to keep the 12 RCM Principles <em><strong>as simple as possible</strong></em> so that they could be applied and understood not only by doctors, but also by the patients.
               </p>
               <p className="text-foreground leading-relaxed mb-4">
-                As a matter of fact, <em><strong>the active role of the patients</strong></em> in the whole process turned out to be so essential that I also needed to formulate the 12 Root Cause Medicine Attitudes, designed primarily for the patients.
+                As a matter of fact, <em><strong>the active role of the patients</strong></em> in the whole process turned out to be so essential that I also needed to formulate the <Link to="/attitudes" className="text-primary hover:underline font-medium">12 Root Cause Medicine Attitudes</Link>, designed primarily for the patients.
               </p>
               
               <figure className="my-6">
