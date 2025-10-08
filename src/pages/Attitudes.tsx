@@ -1,7 +1,5 @@
 import Navigation from "@/components/Navigation";
 import SidebarLayout from "@/components/SidebarLayout";
-import CrossLinks from "@/components/CrossLinks";
-import { Link } from "react-router-dom";
 
 const attitudesToc = [
   { id: "attitude-1", label: "1. First Attitude" },
@@ -23,7 +21,7 @@ const Attitudes = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <SidebarLayout tocItems={attitudesToc} rightSidebar={<CrossLinks context="attitudes" />}>
+      <SidebarLayout tocItems={attitudesToc}>
         <main className="py-12">
           <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl mb-12">
             12 Root Cause Medicine Attitudes
@@ -47,12 +45,6 @@ const Attitudes = () => {
               </section>
             ))}
           </div>
-          
-          <section className="mt-16 p-6 bg-muted/50 rounded-lg" aria-label="Related content">
-            <p className="text-muted-foreground">
-              Learn more about the foundational <Link to="/principles" className="text-primary hover:underline font-medium">12 RCM Principles</Link>, or explore our <Link to="/articles" className="text-primary hover:underline font-medium">Articles</Link> for practical applications.
-            </p>
-          </section>
         </main>
       </SidebarLayout>
     </div>

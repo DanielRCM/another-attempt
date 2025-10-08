@@ -9,7 +9,6 @@ const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/principles", label: "12 RCM Principles" },
     { path: "/attitudes", label: "12 RCM Attitudes" },
-    { path: "/articles", label: "Articles" },
     { path: "/about", label: "About" },
     { path: "/faq", label: "FAQs" }
   ];
